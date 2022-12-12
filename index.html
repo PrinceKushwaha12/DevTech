@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev and Tech</title>
+
+    <!-- _____________custom style sheet link_______________________ -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- -----------------nav section ----------------------------- -->
+    <section class="nav___section">
+        <div class="logo___section">
+            <div class="image">
+                <img src="assets/asset 0.png" alt="this is a logo">
+            </div>
+            <div class="logo____name">
+                <span>DevTech</span>
+            </div>
+        </div>
+        <div class="nav___links___section" id="navLinks">
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="icons___section">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="menu___button___section">
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+    </section>
+
+    <!-- ----------------------------- banner section ------------------------------ -->
+    <section class="banner___section">
+        <div class="info___section">
+            <h5>Developer Company</h5>
+            <h1>Software App</h1>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum porro nam ea. Voluptatibus itaque eos commodi beatae asperiores dolor.</span>
+        </div>
+        <div class="button__section">
+            <div class="button___one">
+                <button>Our Services</button>
+            </div>
+            <div class="button___two">
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------- core features ---------------------------------- -->
+    <section class="core___features___section">
+        <div class="container___section">
+            
+            <div class="image___section">
+                <div><img src="assets/asset 1.jpeg" alt="this is a simple image"></div>
+            </div>
+
+            <div class="content___section">
+
+                <div class="text___container">
+                    <span>Core Features</span>
+                    <h1>Best Business Software Solution</h1>
+                </div>
+
+                <div class="logo___items___texts">
+                    <div class="icons___one box">
+                        <div class="logo"><i class="fa-solid fa-palette"></i></div>
+                        <div class="text"><span>Design</span></div>
+                    </div>
+                    <div class="icons___two box">
+                        <div class="logo"><i class="fa-sharp fa-solid fa-hand-holding-heart"></i></div>
+                        <div class="text"><span>Usage</span></div>
+                    </div>
+                    <div class="icons___three box">
+                        <div class="logo"><i class="fa-solid fa-user"></i></div>
+                        <div class="text"><span>Testing</span></div>
+                    </div>
+                </div>
+
+                <div class="paragraph___texts">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="button___section">
+                    <div><button>Read More</button></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------App section-------------------------->
+    <section class="app___section">
+        <div class="info___section">
+
+            <div class="text___section">
+                <span>App Download</span>
+                <h1>You can control direct from your mobile.</h1>
+            </div>
+
+            <div class="image___section">
+                <div class="image"><img src="assets/asset 2.jpeg" alt="this is a image"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- script -->
+    <script>
+        let menu = document.getElementById("menu");
+        let navLinks = document.getElementById("navLinks");
+        menu.addEventListener("click", function () {
+            if(navLinks.style.display == "none") {
+                navLinks.style.display = "block";
+            }else {
+                navLinks.style.display = "none";
+            }
+        });
+    </script>
+    <!-- fontawesome cdn links -->
+    <script src="https://kit.fontawesome.com/3cc8660b36.js" crossorigin="anonymous"></script>
+</body>
+</html>

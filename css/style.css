@@ -1,0 +1,496 @@
+/* use defuilt */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300;400&family=Lato:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Rubik&family=Sansita:wght@400;700&family=Satisfy&display=swap');
+
+:root {
+    --Asap: 'Asap', sans-serif;
+    --Lato: 'Lato', sans-serif;
+    --Rubik: 'Rubik', sans-serif;
+    --Sansita: 'Sansita', sans-serif;
+    --Satisfy: 'Satisfy', cursive;
+    --C7F2A4: #C7F2A4;
+    --000000: #000000;
+    --777777: #777777;
+    --bbbbbb: #bbbbbb;
+    --70c770: #70c770;
+    --dce8eb: #dce8eb;
+    --efefef: #efefef;
+    --f7d9c4: #f7d9c4;
+    --ff8484: #ff8484;
+    --ffffff: #ffffff;
+    --1b2026: #1b2026;
+    --3d3d3d: #3d3d3d;
+    --shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+    --poppins: 'Poppins', sans-serif;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+h1,
+h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+span {
+    color: rgba(0, 0, 0, 0.795);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+}
+
+/* ______________________nav section start____________________ */
+.nav___section {
+    align-items: center;
+    background-color: var(--efefef);
+    display: flex;
+    flex-wrap: wrap;
+    height: 9vh;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 0px 30px;
+
+}
+
+.nav___section .logo___section {
+    display: flex;
+    align-items: center;
+}
+
+.nav___section .logo___section .image img {
+    width: 40px;
+}
+
+.nav___section .logo___section .logo____name span {
+    font-size: 4rem;
+    font-family: var(--Rubik);
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.nav___section .nav___links___section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav___section .nav___links___section ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav___section .nav___links___section ul li a {
+    font-family: var(--Lato);
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    position: relative;
+    transition: .5s all;
+    text-transform: capitalize;
+    padding-bottom: 2px;
+}
+
+.nav___section .nav___links___section ul li a:hover {
+    opacity: 1;
+}
+
+.nav___section .nav___links___section ul li a::before {
+    bottom: 0;
+    background-color: var(--ff8484);
+    content: "";
+    height: 2px;
+    left: -1px;
+    width: 0%;
+    position: absolute;
+    transition: .5s all;
+}
+
+.nav___section .nav___links___section ul li a:hover::before {
+    width: 100%;
+}
+
+.nav___section .nav___links___section .icons___section i {
+    cursor: pointer;
+    font-size: 3.2rem;
+    margin-right: 5px;
+    opacity: 0.7;
+    transition: .5s all;
+}
+
+.nav___section .nav___links___section .icons___section i:hover {
+    opacity: 1;
+    transform: rotate(10deg);
+}
+
+.nav___section .menu___button___section {
+    display: none;
+}
+
+/* ____________________________banner section___________________________ */
+.banner___section {
+    background-image: url(../assets/asset\ 9.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.banner___section .info___section h5 {
+    color: var(--ffffff);
+    letter-spacing: 1px;
+    line-height: 2;
+    font-family: var(--poppins);
+    font-size: 3rem;
+    opacity: .7;
+    transition: .5s all;
+}
+
+.banner___section .info___section h1 {
+    color: var(--ffffff);
+    letter-spacing: 1px;
+    line-height: 2;
+    font-family: var(--poppins);
+    opacity: .8;
+    transition: .5s all;
+}
+
+.banner___section .info___section h5:hover,
+.banner___section .info___section h1:hover {
+    opacity: 1;
+}
+
+.banner___section .info___section span {
+    color: var(--efefef);
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: 100;
+    font-family: var(--Satisfy);
+    opacity: 1;
+}
+
+.banner___section .button__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.banner___section .button__section button {
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    font-family: var(--Lato);
+}
+
+.banner___section .button__section .button___one button {
+    background-color: var(--f7d9c4);
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.banner___section .button__section .button___two button {
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.banner___section .button__section .button___two button:hover {
+    background-color: var(--f7d9c4);
+}
+
+.banner___section .button__section .button___one button:hover {
+    background-color: var(--ffffff);
+}
+
+/* _________________________________core___features___section________________________________ */
+.core___features___section {
+    padding: 74px 30px 40px 30px;
+}
+
+.core___features___section .container___section {
+    border-radius: 10px;
+    display: flex;
+}
+
+.core___features___section .container___section .image___section img {
+    border-radius: 10px;
+}
+
+.core___features___section .container___section .content___section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+
+.core___features___section .container___section .content___section .text___container span {
+    color: var(--000000);
+    font-size: 2rem;
+    line-height: 3;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.core___features___section .container___section .content___section .text___container h1 {
+    color: var(--000000);
+    font-family: var(--Rubik);
+    font-size: 4rem;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.core___features___section .container___section .content___section .logo___items___texts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.core___features___section .container___section .content___section .logo___items___texts div {
+    align-items: center;
+    background-color: var(--bbbbbb);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.core___features___section .container___section .content___section .logo___items___texts .box {
+    margin: 10px 0px;
+    transition: .5s all;
+}
+
+.core___features___section .container___section .content___section .logo___items___texts .box:hover {
+    transform: scale(1.2);
+}
+.core___features___section .container___section .content___section .logo___items___texts .logo i {
+    font-size: 4.3rem;
+    color: var(--ff8484);
+}
+
+.core___features___section .container___section .content___section .logo___items___texts .text span {
+    letter-spacing: 1.2px;
+    font-family: var(--Rubik);
+    font-weight: 600;
+}
+
+.core___features___section .container___section .paragraph___texts p {
+    font-size: 1rem;
+    font-family: var(--Satisfy);
+    color: black;
+}
+
+.core___features___section .container___section .button___section button {
+    border: none;
+    background-color: var(--3d3d3d);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    padding: 10px 20px;
+    outline: none;
+    transition: .5s all;
+}
+
+.core___features___section .container___section .button___section button:hover {
+    color: var(--000000);
+    background-color: var(--f7d9c4);
+}
+
+/* ____________________________ app section ____________________________ */
+.app___section {
+    padding: 20px 20px;
+    margin: 20px;
+}
+
+.app___section .info___section {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.app___section .info___section .text___section span {
+    color: var(--000000);
+    font-size: 2rem;
+    line-height: 3;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.app___section .info___section .image___section .image {
+    width: 154px;
+    height: 200px;
+}
+
+.app___section .info___section .image___section .image img {
+    border-radius: 4px;
+    width: fit-content;
+    height: inherit;
+    transition: .5s all;
+}
+
+.app___section .info___section .image___section .image img:hover {
+    transform: scale(1.4);
+}
+
+
+/* _____________________________media quary_____________________ */
+/* ipad mini screen size */
+@media (max-width:1026px) {
+    .core___features___section .container___section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .core___features___section {
+        padding: 0px;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        padding-right: 0px;
+    }
+
+    .core___features___section .container___section .image___section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 58%;
+    }    
+
+    .app___section .info___section {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        height: 400px
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 53%;
+    }
+
+    .nav___section .menu___button___section {
+        display: block;
+    }
+
+    .nav___section .menu___button___section i {
+        font-size: 3rem;
+    }
+
+    .nav___section {
+        position: relative;
+    }
+
+    .nav___section .nav___links___section {
+        background-color: var(--ffffff);
+        flex-direction: column;
+        left: 0%;
+        position: absolute;
+        top: 8vh;
+        width: 100%;
+        display: none;
+    }
+
+    .nav___section .nav___links___section ul li {
+        display: block;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .nav___section .nav___links___section .icons___section {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .banner___section {
+        padding-top: 56px;
+    }
+
+    .core___features___section .container___section .image___section div img {
+        width: 100%;
+
+    }
+
+    .app___section {
+        margin: 0px;
+    }
+
+    .app___section .info___section .image___section {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* iPhone XR screen size */
+@media (max-width:414px) {
+    html {
+        font-size: 48%;
+    }
+
+    .banner___section {
+        padding-left: 10px;
+    }
+
+}
