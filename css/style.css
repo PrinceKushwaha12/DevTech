@@ -201,13 +201,8 @@ textarea {
     letter-spacing: 1px;
     line-height: 2;
     font-family: var(--poppins);
-    opacity: .8;
-    transition: .5s all;
-}
-
-.banner___section .info___section h5:hover,
-.banner___section .info___section h1:hover {
     opacity: 1;
+    transition: .5s all;
 }
 
 .banner___section .info___section span {
@@ -315,6 +310,7 @@ textarea {
 .core___features___section .container___section .content___section .logo___items___texts .box:hover {
     transform: scale(1.2);
 }
+
 .core___features___section .container___section .content___section .logo___items___texts .logo i {
     font-size: 4.3rem;
     color: var(--ff8484);
@@ -386,7 +382,229 @@ textarea {
     transform: scale(1.4);
 }
 
+/* _____________________________our Goals section__________________________ */
+.our___goal___section {
+    background-color: var(--efefef);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
 
+.our___goal___section .header___section {
+    padding: 10px 0px;
+}
+
+.our___goal___section .header___section span {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--Rubik);
+}
+
+.our___goal___section .article___section {
+    padding: 10px 0px;
+}
+
+.our___goal___section .article___section p {
+    color: var(--000000);
+    font-size: 2rem;
+    font-family: var(--Satisfy);
+    line-height: 2;
+}
+
+.our___goal___section .some___goals___section {
+    align-items: center;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.our___goal___section .some___goals___section .icons___text___section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.our___goal___section .some___goals___section .icons___text___section .icons i {
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #ff8484;
+    font-size: 3rem;
+    margin-right: 5px;
+    padding: 4px;
+    transition: .5s all;
+}
+
+.our___goal___section .some___goals___section .icons___text___section .icons i:hover {
+    transform: scale(1.2);
+}
+
+/* ------------------------------product section-------------------------- */
+
+.product___features___section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.product___features___section .header___section {
+    line-height: 3;
+}
+
+.product___features___section .header___section h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: var(--poppins);
+}
+
+.product___features___section .product___section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.product___features___section .product___section .container {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(166, 159, 159, 0.937);
+    transition: .5s all;
+    margin: 20px;
+}
+
+.product___features___section .product___section .container:hover {
+    transform: scale(1.01);
+}
+
+.product___features___section .product___section .container .image___section {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.product___features___section .product___section .container .image___section img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 225px;
+    width: 250px;
+    object-fit: cover;
+    /* position: relative; */
+}
+
+.product___features___section .product___section .container .text___info___section {
+    padding: 14px;
+    position: relative;
+}
+
+.product___features___section .product___section .container .text___info___section h5 {
+    font-size: 1rem;
+    font-family: var(--poppins);
+    opacity: 0.7;
+}
+
+.product___features___section .product___section .container .text___info___section h2 {
+    font: 2rem;
+    font-family: var(--poppins);
+    font-weight: 700;
+    opacity: .8;
+}
+
+.product___features___section .product___section .container .text___info___section i {
+    background-color: var(--dce8eb);
+    border-radius: 5px;
+    bottom: 55px;
+    font-size: 3rem;
+    right: 20px;
+    padding: 13px;
+    position: absolute;
+    transition: .5s all;
+}
+
+.product___features___section .product___section .container .text___info___section i:hover {
+    transform: scale(1.2);
+}
+
+/* ---------------------------contact with me page-------------------------- */
+.contact___with___me {
+    box-shadow: 0px 0px 10px rgba(166, 159, 159, 0.937);
+    border-radius: 10px;
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+}
+
+
+.contact___with___me .header___section {
+    line-height: 3;
+}
+
+.contact___with___me .header___section h1 {
+    font-size: 4rem;
+    font-family: var(--poppins);
+    font-weight: 750;
+    opacity: .8;
+}
+.contact___with___me .form___section label {
+    display: block;
+    position: relative;
+}
+
+.contact___with___me .form___section label span {
+    font-family: var(--poppins);
+    font-weight: 600;
+    opacity: 0.7;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    transition: .5s all;
+}
+
+.contact___with___me .form___section input:focus ~ span,
+.contact___with___me .form___section textarea:focus ~ span,
+.contact___with___me .form___section input:valid ~ span,
+.contact___with___me .form___section textarea:valid ~ span{
+    transform: translateY(-22px);
+    color: rgb(0, 106, 255);
+}
+
+.contact___with___me .form___section input:focus,
+.contact___with___me .form___section textarea:focus {
+    background-color: var(--C7F2A4);
+}
+
+.contact___with___me .form___section input,
+.contact___with___me .form___section textarea {
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.795);
+    padding: 4px 4px;
+    resize: none;
+    outline: none;
+    margin-top: 10px;
+    transition: .5s all;
+}
+
+.contact___with___me .form___section button {
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--poppins);
+    padding: 10px 20px;
+    transition: .5s all;
+}
+
+.contact___with___me .form___section button:hover {
+    background-color:var(--ff8484);
+}
 /* _____________________________media quary_____________________ */
 /* ipad mini screen size */
 @media (max-width:1026px) {
@@ -412,7 +630,7 @@ textarea {
 @media (max-width:768px) {
     html {
         font-size: 58%;
-    }    
+    }
 
     .app___section .info___section {
         flex-direction: column;
@@ -481,6 +699,10 @@ textarea {
         width: 100%;
         justify-content: center;
     }
+
+    .contact___with___me {
+        margin: 20px 50px;
+    }
 }
 
 /* iPhone XR screen size */
@@ -493,4 +715,7 @@ textarea {
         padding-left: 10px;
     }
 
+    .contact___with___me {
+        margin: 20px 10px;
+    }
 }

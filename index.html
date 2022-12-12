@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- -----------------nav section ----------------------------- -->
-    <section class="nav___section">
+    <section class="nav___section" id="home">
         <div class="logo___section">
             <div class="image">
                 <img src="assets/asset 0.png" alt="this is a logo">
@@ -25,16 +25,16 @@
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="icons___section">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#home"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
         
@@ -68,7 +68,7 @@
                 <div><img src="assets/asset 1.jpeg" alt="this is a simple image"></div>
             </div>
 
-            <div class="content___section">
+            <div class="content___section" id="features">
 
                 <div class="text___container">
                     <span>Core Features</span>
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="button___section">
-                    <div><button>Read More</button></div>
+                    <div><a href="#services"><button>Read More</button></a></div>
                 </div>
                 
             </div>
@@ -117,18 +117,113 @@
 
         </div>
     </section>
+
+    <!-- -------------------------our goal section----------------------- -->
+    <section class="our___goal___section">
+        <div class="header___section">
+            <span>Our Goals</span>
+        </div>
+        <div class="article___section">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic earum reprehenderit labore maiores doloribus, tenetur provident, aut aperiam veniam sunt veritatis impedit nostrum sit facilis pariatur ad a eaque ea quibusdam maxime velit accusantium inventore aliquid. Error fugiat cumque numquam itaque, nihil molestias! Quos repellendus tempora ratione provident labore? Cum eum deleniti incidunt molestiae iusto expedita vero. Tempora, cupiditate. Porro.</p>
+        </div>
+        <div class="some___goals___section">
+            <div class="icons___text___section">
+                <div class="icons"><i class="fa-solid fa-check"></i></div>
+                <div class="text"><h3>App Design & Research</h3></div>
+            </div>
+            <div class="icons___text___section">
+                <div class="icons"><i class="fa-solid fa-check"></i></div>
+                <div class="text"><h3>Development & Testing</h3></div>
+            </div>
+            <div class="icons___text___section">
+                <div class="icons"><i class="fa-solid fa-check"></i></div>
+                <div class="text"><h3>App Design & Research</h3></div>
+            </div>
+            <div class="icons___text___section">
+                <div class="icons"><i class="fa-solid fa-check"></i></div>
+                <div class="text"><h3>Development & Testing</h3></div>
+            </div>
+            <div class="icons___text___section">
+                <div class="icons"><i class="fa-solid fa-check"></i></div>
+                <div class="text"><h3>App Design & Research</h3></div>
+            </div>
+            <div class="icons___text___section">
+                <div class="icons"><i class="fa-solid fa-check"></i></div>
+                <div class="text"><h3>Development & Testing</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------product section---------------------------- -->
+    <div class="product___features___section" id="services">
+        <div class="header___section">
+            <h1>Core Services</h1>
+        </div>
+        <div class="product___section">
+            <div class="container">
+                <div class="image___section">
+                    <img src="assets/asset 1.jpeg" alt="">
+                </div>
+                <div class="text___info___section">
+                    <h5>Software, Interface</h5>
+                    <h2>Development</h2>
+                    <a href="#home"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image___section">
+                    <img src="assets/asset 2.jpeg" alt="">
+                </div>
+                <div class="text___info___section">
+                    <h5>Software, Interface</h5>
+                    <h2>Design</h2>
+                    <a href="#home"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image___section">
+                    <img src="assets/asset 3.jpeg" alt="">
+                </div>
+                <div class="text___info___section">
+                    <h5>Software, Interface</h5>
+                    <h2>Optimization</h2>
+                    <a href="#home"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- __________________________Contact with me page____________________________ -->
+    <section id="contact" class="contact___with___me">
+        <div class="header___section">
+            <h1>Contact - With - Me</h1>
+        </div>
+        <div class="form___section">
+            <form action="">
+                <label for="name">
+                    <input type="text" id="name" required="required">
+                    <span id="name">Name : </span> 
+                </label> <br>
+                <label for="email">
+                    <input type="text" id="email" required="required">
+                    <span id="email">Email : </span>
+                </label> <br>
+                <label for="phone">
+                    <input type="text" id="phone" required="required">
+                    <span id="phone">Phone : </span>
+                </label> <br>
+                <label for="massage">
+                    <textarea name="" id="" cols="30" rows="10" required="required"></textarea>
+                    <span id="massage">Massage : </span>
+                </label> <br>
+                <label for="submit">
+                    <button>Send</button>
+                </label>
+            </form>
+        </div>
+    </section>
     <!-- script -->
-    <script>
-        let menu = document.getElementById("menu");
-        let navLinks = document.getElementById("navLinks");
-        menu.addEventListener("click", function () {
-            if(navLinks.style.display == "none") {
-                navLinks.style.display = "block";
-            }else {
-                navLinks.style.display = "none";
-            }
-        });
-    </script>
+    <script src="js/index.js"></script>
     <!-- fontawesome cdn links -->
     <script src="https://kit.fontawesome.com/3cc8660b36.js" crossorigin="anonymous"></script>
 </body>
